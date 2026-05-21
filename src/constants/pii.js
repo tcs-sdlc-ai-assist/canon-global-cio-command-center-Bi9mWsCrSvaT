@@ -1,0 +1,31 @@
+import { PII_FIELDS, PII_VALUES, SAFE_FIELDS } from './piiConstants';
+
+export const USER_NAME_PLACEHOLDER = '[USER_NAME]';
+export const USER_ROLE_PLACEHOLDER = '[USER_ROLE]';
+export const USER_AVATAR_PLACEHOLDER = '[USER_AVATAR]';
+
+export const PII_REPLACEMENT_MAP = Object.freeze({
+  'Martin de Weerdt': USER_NAME_PLACEHOLDER,
+  'Global Chief Information Officer': USER_ROLE_PLACEHOLDER,
+  'MW': USER_AVATAR_PLACEHOLDER,
+});
+
+export const PII_PLACEHOLDERS = Object.freeze({
+  USER_NAME: USER_NAME_PLACEHOLDER,
+  USER_ROLE: USER_ROLE_PLACEHOLDER,
+  USER_AVATAR: USER_AVATAR_PLACEHOLDER,
+});
+
+export const PII_FIELD_TO_PLACEHOLDER = Object.freeze({
+  user_name: USER_NAME_PLACEHOLDER,
+  user_role: USER_ROLE_PLACEHOLDER,
+  user_avatar_initials: USER_AVATAR_PLACEHOLDER,
+});
+
+export const ALL_PII_PLACEHOLDERS = Object.freeze([
+  USER_NAME_PLACEHOLDER,
+  USER_ROLE_PLACEHOLDER,
+  USER_AVATAR_PLACEHOLDER,
+]);
+
+export { PII_FIELDS, PII_VALUES, SAFE_FIELDS };
